@@ -11,7 +11,6 @@ Source0: http://prdownloads.sourceforge.net/freedoom/%{distname}.zip
 License: GPL
 Group: Games/Arcade
 Url: http://freedoom.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 Provides: doom-iwad
 
