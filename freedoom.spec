@@ -1,6 +1,6 @@
 %define name freedoom
-%define version 0.5
-%define release %mkrel 3
+%define version 0.6.3
+%define release %mkrel 1
 %define distname %{name}-iwad-%{version}
 
 Summary: Complete independent Doom game
