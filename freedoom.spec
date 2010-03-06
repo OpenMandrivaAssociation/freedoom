@@ -1,19 +1,19 @@
-%define name freedoom
-%define version 0.6.3
-%define release %mkrel 2
+%define name	freedoom
+%define version 0.6.4
+%define release %mkrel 1
 %define distname %{name}-iwad-%{version}
 
-Summary: Complete independent Doom game
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://prdownloads.sourceforge.net/freedoom/%{distname}.zip
-License: GPL
-Group: Games/Arcade
-Url: http://freedoom.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildArch: noarch
-Provides: doom-iwad
+Summary:	Complete independent Doom game
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
+Source0:	http://prdownloads.sourceforge.net/freedoom/%{distname}.zip
+License:	GPLv2
+Group:		Games/Arcade
+Url:		http://freedoom.sourceforge.net/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildArch:	noarch
+Provides:	doom-iwad
 
 %description
 Freedoom is a project to create a complete, free Doom IWAD
