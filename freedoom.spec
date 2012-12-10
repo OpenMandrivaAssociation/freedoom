@@ -44,3 +44,48 @@ rm -rf %{buildroot}
 %{_gamesdatadir}/doom/%{name}.wad
 
 
+
+
+%changelog
+* Fri Mar 25 2011 Zombie Ryushu <ryushu@mandriva.org> 0.7-1mdv2011.0
++ Revision: 648448
+- Upgrade to 0.7
+
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.6.4-2mdv2011.0
++ Revision: 610747
+- rebuild
+
+* Sat Mar 06 2010 Sandro Cazzaniga <kharec@mandriva.org> 0.6.4-1mdv2010.1
++ Revision: 514904
+- fix license
+- clean mixed-use-spaces-and-tabs
+- update to 0.6.4
+
+  + Shlomi Fish <shlomif@mandriva.org>
+    - Added instructions on how to play
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 0.6.3-2mdv2010.0
++ Revision: 437589
+- rebuild
+
+* Fri Jan 09 2009 Zombie Ryushu <ryushu@mandriva.org> 0.6.3-1mdv2009.1
++ Revision: 327350
+- New Version 0.6.3
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.5-3mdv2009.0
++ Revision: 245361
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0.5-1mdv2008.1
++ Revision: 136419
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Tue Dec 12 2006 Olivier Blin <oblin@mandriva.com> 0.5-1mdv2007.0
++ Revision: 95949
+- initial freedoom release
+- Create freedoom
+
