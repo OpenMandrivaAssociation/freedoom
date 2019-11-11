@@ -4,7 +4,7 @@ Summary:	Complete independent Doom game
 Name:		  freedoom
 Version:	0.12.1
 Release:	1
-Source0:	 https://github.com/freedoom/freedoom/releases/download/v%{version}/%{name}-%{version}.tar.xz
+Source0:	 https://github.com/freedoom/freedoom/releases/download/v%{version}/%{name}-%{version}.zip
 License:	GPLv2
 Group:		Games/Arcade
 Url:            http://freedoom.github.io/
