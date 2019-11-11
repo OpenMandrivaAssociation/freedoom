@@ -25,7 +25,7 @@ In order to play it with prboom, install prboom and type:
 $ prboom -iwad /usr/share/games/doom/freedoom.wad
 
 %prep
-%setup -q -n %{distname}
+%setup -q
 
 %build
 %install
