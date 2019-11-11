@@ -1,19 +1,17 @@
-%define name	freedoom
-%define version 0.7
-%define release 2
 %define distname %{name}-iwad-%{version}
 
 Summary:	Complete independent Doom game
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-Source0:	http://prdownloads.sourceforge.net/freedoom/%{distname}.zip
+Name:		  freedoom
+Version:	0.12.1
+Release:	1
+Source0:	 https://github.com/freedoom/freedoom/releases/download/v%{version}/%{name}-%{version}.zip
 License:	GPLv2
 Group:		Games/Arcade
-Url:		http://freedoom.sourceforge.net/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildArch:	noarch
-Provides:	doom-iwad
+Url:            http://freedoom.github.io/
+
+BuildArch:      noarch
+Provides:       doom-iwad
+Requires:       doom-engine
 
 %description
 Freedoom is a project to create a complete, free Doom IWAD
@@ -27,21 +25,18 @@ In order to play it with prboom, install prboom and type:
 $ prboom -iwad /usr/share/games/doom/freedoom.wad
 
 %prep
-%setup -q -n %{distname}
+%setup -q
 
 %build
-
 %install
-rm -rf %{buildroot}
-install -D doom2.wad %{buildroot}%{_gamesdatadir}/doom/%{name}.wad
-
-%clean
-rm -rf %{buildroot}
+install -D -m644 %{name}1.wad %{buildroot}%{_gamesdatadir}/doom/%{name}1.wad
+install -D -m644 %{name}2.wad %{buildroot}%{_gamesdatadir}/doom/%{name}2.wad
 
 %files
-%defattr(-,root,root)
-%doc CREDITS ChangeLog NEWS README
-%{_gamesdatadir}/doom/%{name}.wad
+%doc CREDITS.txt README.html NEWS.html freedoom-manual.pdf
+%license COPYING.txt
+%{_gamesdatadir}/doom/%{name}1.wad
+%{_gamesdatadir}/doom/%{name}2.wad
 
 
 
