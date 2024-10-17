@@ -7,7 +7,7 @@ Release:	1
 Source0:	 https://github.com/freedoom/freedoom/releases/download/v%{version}/%{name}-%{version}.zip
 License:	GPLv2
 Group:		Games/Arcade
-Url:            http://freedoom.github.io/
+Url:            https://freedoom.github.io/
 
 BuildArch:      noarch
 Provides:       doom-iwad
